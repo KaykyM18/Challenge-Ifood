@@ -6,6 +6,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    overflow: hidden;
 }
 .login-container {
     text-align: center;
@@ -36,6 +37,7 @@ body {
     margin-top: 20px;
     border-radius: 10px;
 }
+
 .images {
     position: absolute;
 }
@@ -45,8 +47,8 @@ body {
     width: 300px;
 }
 .juice {
-    top: 20px;
-    right: 0px;
+    top: 10px;
+    right: 10px;
     width: 180px;
 }
 .plate {
@@ -55,7 +57,7 @@ body {
     width: 280px;
 }
 .fruits {
-    bottom: 00px;
-    right: 0px;
-    width: 350px;
+    bottom: -60px;
+    right: -80px;
+    width: 380px;
 }
