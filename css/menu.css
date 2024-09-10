@@ -20,6 +20,8 @@ body {
 .sidebar p {
     color: black;
     font-weight: bold;
+    padding-bottom: 800px;
+    margin-top: -3px;
 }
 .main-content {
     margin-left: 100px;
