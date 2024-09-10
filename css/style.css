@@ -1,0 +1,62 @@
+body {
+    background-color: #e50914;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.login-container {
+    text-align: center;
+    margin-top: 100px;
+}
+.logo {
+    width: 500px;
+    margin-top: -350px;
+}
+.input-container {
+    margin: 20px 0;
+}
+.input-container input {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+}
+.login-button {
+    padding: 10px 50px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.images {
+    position: absolute;
+}
+.pizza {
+    top: -10px;
+    left: -10px;
+    width: 300px;
+}
+.juice {
+    top: 20px;
+    right: 0px;
+    width: 180px;
+}
+.plate {
+    bottom: 0px;
+    left: -10px;
+    width: 280px;
+}
+.fruits {
+    bottom: 00px;
+    right: 0px;
+    width: 350px;
+}
