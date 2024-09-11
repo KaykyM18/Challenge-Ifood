@@ -1,11 +1,7 @@
 const usuario = {
-    nome : "Kayky.Martins",
-    senha : "cavalo2003"
+    nome : "Kayky",
+    senha : "anjinho123"
 }
-
-const user2 = usuario;
-user2.nome = "pedro"
-user2.senha = "pedro"
 
 const user = usuario;
 
