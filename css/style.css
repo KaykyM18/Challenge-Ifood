@@ -42,8 +42,8 @@ body {
     position: absolute;
 }
 .pizza {
-    top: -10px;
-    left: -10px;
+    top: -50px;
+    left: -60px;
     width: 300px;
 }
 .juice {
@@ -52,12 +52,12 @@ body {
     width: 180px;
 }
 .plate {
-    bottom: 0px;
-    left: -10px;
+    bottom: -50px;
+    left: -60px;
     width: 280px;
 }
 .fruits {
-    bottom: -60px;
+    bottom: -80px;
     right: -80px;
     width: 380px;
 }
