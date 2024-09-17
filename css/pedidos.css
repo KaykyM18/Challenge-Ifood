@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.header-title {
+    width: 50%;
+    padding: 20px;
+}
+
+
+h1 {
+    color: red;
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+.logo-ifood img {
+    width: 300px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pedidos-andamento{
+    width: 48%;
+    height: 660%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pedidos-finalizados {
+    width: 48%;
+    height: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pedido {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd; /* Borda para dividir os pedidos */
+    border-radius: 5px;
+    background-color: #fdfdfd;
+}
+
+.logo-pedido img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.pedido p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: red;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+.food-image {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.food-image img {
+    width: 350px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .header-title {
+        flex-direction: column;
+    }
+    
+    .pedidos-andamento, .pedidos-finalizados {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .food-image {
+        text-align: center;
+    }
+}

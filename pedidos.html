@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos - iFood</title>
+    <link rel="stylesheet" href="./css/pedidos.css">
+</head>
+<body>
+    <header>
+        <div class="header-title">
+            <h1>Pedidos em Andamento</h1>
+            <h1>Pedidos Finalizados</h1>
+        </div>
+        <div class="logo-ifood">
+            <img src="./img/ifood.png" alt="Logo iFood">
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="pedidos-andamento">
+            <div class="pedido">
+                <div class="logo-pedido">
+                    <img src="./img/logo-sushi-free-vector.jpg" alt="Logo Meu Sushi">
+                </div>
+                <p><strong>Novo Pedido</strong></p>
+                <p>02/05/2024 21:34:12</p>
+                <p>Meu Sushi</p>
+                <p>Pedido em Andamento °N 30153</p>
+                <p>803 - Ice e holl (30 unid)</p>
+                <button onclick="finalizarPedido()">Finalizar</button>
+            </div>
+        </div>
+
+        <div class="pedidos-finalizados">
+            <div class="pedido">
+                <div class="logo-pedido">
+                    <img src="./img/logo-sushi-free-vector.jpg" alt="Logo Meu Sushi">
+                </div>
+                <p><strong>Pedido Finalizado</strong></p>
+                <p>01/06/2024 20:32:14</p>
+                <p>Meu Sushi</p>
+                <p>Pedido Concluído °N 30152</p>
+                <p>803 - Ice e holl (30 unid)</p>
+            </div>
+
+            <div class="pedido">
+                <div class="logo-pedido">
+                    <img src="./img/logo-sushi-free-vector.jpg" alt="Logo Meu Sushi">
+                </div>
+                <p><strong>Pedido Finalizado</strong></p>
+                <p>31/05/2024 18:43:34</p>
+                <p>Meu Sushi</p>
+                <p>Pedido Concluído °N 30151</p>
+                <p>803 - Ice e holl (30 unid)</p>
+            </div>
+
+            <div class="pedido">
+                <div class="logo-pedido">
+                    <img src="./img/logo-sushi-free-vector.jpg" alt="Logo Meu Sushi">
+                </div>
+                <p><strong>Pedido Finalizado</strong></p>
+                <p>31/05/2024 18:32:56</p>
+                <p>Meu Sushi</p>
+                <p>Pedido Concluído °N 30150</p>
+                <p>803 - Ice e holl (30 unid)</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="food-image">
+        <img src="./img/comida.png" alt="Prato de Comida">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
