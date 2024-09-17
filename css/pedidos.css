@@ -1,0 +1,139 @@
+/* Estilos gerais do codigo*/
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden; /* Evita rolagem horizontal indesejada */
+}
+
+/* Título Extrato em vermelho no canto superior esquerdo */
+.titulo-vermelho {
+    color: red;
+    font-size: calc(2rem + 2vw); /* Ajusta o tamanho com base na largura da tela */
+    margin: 0;
+    position: absolute; /*"position:relative;"."position:absolute;"."position:fixed;"  zoom e sobreposição*/
+    top: 10px;
+    left: 100px;
+    z-index: 5;
+}
+
+/* Logo no topo Ifood part1*/
+.logo-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 1200px;
+}
+/*Logo no topo Ifood part2*/
+.logo-top {
+    width: 150px;
+    margin-right: 20px;
+    position: relative; /*"position:relative;"."position:absolute;"."position:fixed;"  zoom e sobreposição*/
+    z-index: 2; 
+}
+
+/* Imagens de frutas e pizza que estao na parte inferior da tela PART1*/
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    position: relative; /*"position:relative;"."position:absolute;"."position:fixed;"  zoom e sobreposição*/
+    z-index: 1;
+    gap: 20px;
+}
+/* Imagens de frutas e pizza que estao na parte inferior da tela PART2*/
+.frutas, .pizza {
+    width: 20%;
+    max-width: 150px;
+    position: relative; /*"position:relative;"."position:absolute;"."position:fixed;"  zoom e sobreposição*/
+    z-index: 1; 
+}
+
+/* Estilos do extrato */
+.extrato-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    position: relative; /* Para o z-index */
+    z-index: 10; 
+}
+/*Organizações da parte interna dos containers até linha 121*/
+.order-info {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.details {
+    flex-grow: 1;
+}
+
+.details p {
+    margin: 2px 0;
+    color: #333;
+}
+
+.status {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.order-summary {
+    font-weight: bold;
+}
+
+.client-info {
+    text-align: right;
+}
+
+.client-info h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.client-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.sushi-overlay-container {
+    width: 20%;
+    max-width: 210px;
+    height: auto;
+}
+
+.sushi {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo para a seta de retorno no canto superior esquerdo */
+.back-to-top {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: calc(0rem + 2vw); 
+    color: #333;
+    text-decoration: none;
+    z-index: 10;
+    padding: 5px; 
+    cursor: pointer; /* permite que o ponteiro do mouse mostre que é clicável */
+}
+/* Faz com que apenas o link <a> seja clicável e não o ícone <i> */
+.back-to-top i {
+    pointer-events: none; 
+}
+
