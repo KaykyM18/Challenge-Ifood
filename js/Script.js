@@ -1,6 +1,6 @@
 const usuario = {
-    nome : "Kayky",
-    senha : "anjinho123"
+    nome : "I202402",
+    senha : "ifood2024"
 }
 
 const user = usuario;
@@ -13,7 +13,7 @@ const senha = document.getElementById("password")
     if(nome.value == user.nome && senha.value == user.senha){
         window.location.replace ("menu.html")
     } else {
-        nome.placeholder = "Usuario ou senha invalida"
+        nome.placeholder = "Usuario Invalida"
         return
     }
 

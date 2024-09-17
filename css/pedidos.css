@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-x: hidden; /* Evita rolagem horizontal indesejada */
+    overflow: hidden; /* Evita rolagem horizontal indesejada */
 }
 
 /* Título Extrato em vermelho no canto superior esquerdo */
@@ -30,29 +30,10 @@ body {
 }
 /*Logo no topo Ifood part2*/
 .logo-top {
-    width: 150px;
-    margin-right: 20px;
+    width: 350px;
+    margin-right: -350px;
     position: relative; /*"position:relative;"."position:absolute;"."position:fixed;"  zoom e sobreposição*/
     z-index: 2; 
-}
-
-/* Imagens de frutas e pizza que estao na parte inferior da tela PART1*/
-.image-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-    padding: 20px;
-    position: relative; /*"position:relative;"."position:absolute;"."position:fixed;"  zoom e sobreposição*/
-    z-index: 1;
-    gap: 20px;
-}
-/* Imagens de frutas e pizza que estao na parte inferior da tela PART2*/
-.frutas, .pizza {
-    width: 20%;
-    max-width: 150px;
-    position: relative; /*"position:relative;"."position:absolute;"."position:fixed;"  zoom e sobreposição*/
-    z-index: 1; 
 }
 
 /* Estilos do extrato */
@@ -137,3 +118,18 @@ body {
     pointer-events: none; 
 }
 
+.images {
+    position: absolute;
+}
+
+.fruits {
+    bottom: -80px;
+    right: -80px;
+    width: 300px;
+}
+
+.pizza {
+    top: 780px;
+    left: -90px;
+    width: 350px;
+}
