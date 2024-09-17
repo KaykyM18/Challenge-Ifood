@@ -1,116 +1,96 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
-    padding: 20px;
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
+.back-to-top {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: calc(0rem + 2vw); 
+    color: #333;
+    text-decoration: none;
+    z-index: 10;
+    padding: 0px;
+    margin-left: 60px; 
+    cursor: pointer; /* permite que o ponteiro do mouse mostre que é clicável */
 }
-
-.header-title {
-    width: 50%;
-    padding: 20px;
-}
-
-
-h1 {
-    color: red;
-    font-size: 1.5rem;
-    margin-right: 20px;
-}
-
-.logo-ifood img {
-    width: 300px;
+/* Faz com que apenas o link <a> seja clicável e não o ícone <i> */
+.back-to-top i {
+    pointer-events: none; 
 }
 
 .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.orders-section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #e53935;
+    font-size: 2rem;
+}
+
+.order {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
 }
 
-.pedidos-andamento{
-    width: 48%;
-    height: 660%;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.pedidos-finalizados {
-    width: 48%;
-    height: auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.restaurant-name img {
+    width: 100px;
 }
 
-.pedido {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ddd; /* Borda para dividir os pedidos */
-    border-radius: 5px;
-    background-color: #fdfdfd;
+.order-time span {
+    margin-top: 50px;
 }
 
-.logo-pedido img {
-    width: 50px;
-    height: auto;
-    margin-bottom: 10px;
+.order-details {
+    margin: 10px 50px;
+    white-space: nowrap;
 }
 
-.pedido p {
-    margin-bottom: 10px;
-    font-size: 1rem;
+.p {
+    width: 100%;
 }
 
-button {
-    background-color: red;
-    color: #fff;
-    padding: 10px;
+.finalize-button {
+    background-color: #e53935;
+    color: white;
     border: none;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: darkred;
+.finalize-button:hover {
+    background-color: #d32f2f;
 }
 
-.food-image {
-    text-align: left;
-    margin-top: 20px;
+.in-progress {
+    border-left: 5px solid #ffeb3b;
 }
 
-.food-image img {
-    width: 350px;
-    height: auto;
+.finished {
+    border-left: 5px solid #4caf50;
 }
 
-@media (max-width: 768px) {
-    .header-title {
-        flex-direction: column;
-    }
-    
-    .pedidos-andamento, .pedidos-finalizados {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .food-image {
-        text-align: center;
-    }
+.finished .finalize-button {
+    display: none;
 }
